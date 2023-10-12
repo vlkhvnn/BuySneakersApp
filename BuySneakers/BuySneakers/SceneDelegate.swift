@@ -19,7 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = UINavigationController(rootViewController: Onb1ViewController())
+        let onboardingCompleted = UserDefaults.standard.bool(forKey: "onboardingCompleted")
+        if !onboardingCompleted {
+            window?.rootViewController = UINavigationController(rootViewController: Onb1ViewController())
+        }
+        else {
+            window?.rootViewController = UINavigationController(rootViewController: MainTabBarController())
+        }
         
         window?.makeKeyAndVisible()
     }

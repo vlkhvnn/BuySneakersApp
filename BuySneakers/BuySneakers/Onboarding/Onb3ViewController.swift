@@ -151,7 +151,8 @@ class Onb3ViewController: UIViewController {
     
     @objc
     private func finalButton() {
-        let vc = UINavigationController(rootViewController: MainTabBarController())
+        let vc = MainTabBarController()
+        UserDefaults.standard.set(true, forKey: "onboardingCompleted")
         navigationController?.pushViewController(vc, animated: true)
     }
 }
