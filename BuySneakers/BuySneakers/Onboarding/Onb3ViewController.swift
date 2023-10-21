@@ -95,58 +95,49 @@ class Onb3ViewController: UIViewController {
     }
     
     private func applyConstraints() {
-        let leftSneakerImageViewConstraints = [
-            leftSneakerImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            leftSneakerImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 37),
-        ]
+        leftSneakerImageView.snp.makeConstraints { make in
+            make.left.equalToSuperview()
+            make.top.equalToSuperview().offset(37)
+        }
         
-        let rightSneakerImageViewConstraints = [
-            rightSneakerImageView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            rightSneakerImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 87)
-        ]
+        rightSneakerImageView.snp.makeConstraints { make in
+            make.right.equalToSuperview()
+            make.top.equalToSuperview().offset(87)
+        }
         
-        let bottomVectorImageViewConstraints = [
-            bottomVectorImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 20),
-            bottomVectorImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
-        ]
+        bottomVectorImageView.snp.makeConstraints { make in
+            make.bottom.equalToSuperview().offset(20)
+            make.left.equalToSuperview()
+        }
         
-        let bottomSheetConstraints = [
-            bottomSheet.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bottomSheet.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bottomSheet.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10),
-            bottomSheet.heightAnchor.constraint(equalToConstant: 288)
-        ]
+        bottomSheet.snp.makeConstraints { make in
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview().offset(10)
+            make.height.equalTo(288)
+        }
         
-        let fastLabelConstraints = [
-            fastLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            fastLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -180)
-        ]
+        fastLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-180)
+        }
         
-        let getLabelConstraints = [
-            getLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            getLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -140)
-        ]
+        getLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-140)
+        }
         
-        let nextButtonConstraints = [
-            nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            nextButton.heightAnchor.constraint(equalToConstant: 54),
-            nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -58)
-        ]
+        nextButton.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().offset(-16)
+            make.bottom.equalToSuperview().offset(-58)
+            make.height.equalTo(54)
+        }
         
-        let pageControlConstraints = [
-            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            pageControl.bottomAnchor.constraint(equalTo: fastLabel.topAnchor, constant: -20)
-        ]
-        
-        NSLayoutConstraint.activate(leftSneakerImageViewConstraints)
-        NSLayoutConstraint.activate(rightSneakerImageViewConstraints)
-        NSLayoutConstraint.activate(bottomVectorImageViewConstraints)
-        NSLayoutConstraint.activate(bottomSheetConstraints)
-        NSLayoutConstraint.activate(fastLabelConstraints)
-        NSLayoutConstraint.activate(getLabelConstraints)
-        NSLayoutConstraint.activate(nextButtonConstraints)
-        NSLayoutConstraint.activate(pageControlConstraints)
+        pageControl.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(fastLabel.snp.top).offset(-20)
+        }
     }
     
     @objc
