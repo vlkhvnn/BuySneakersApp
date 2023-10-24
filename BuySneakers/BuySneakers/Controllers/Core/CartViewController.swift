@@ -19,9 +19,21 @@ class CartViewController: UIViewController {
         return tableView
     }()
     
+    private var confirmButton = {
+        let button = UIButton()
+        button.setTitle("Next", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .black
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.cornerRadius = 24
+        button.addTarget(self, action: #selector(confirmOrder), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
+        view.addSubview(confirmButton)
         tableView.delegate = self
         tableView.dataSource = self
         ShoeService.shared.delegate = self
@@ -42,6 +54,18 @@ class CartViewController: UIViewController {
             make.left.equalToSuperview()
             make.bottom.equalToSuperview().offset(-200)
         }
+        
+        confirmButton.snp.makeConstraints { make in
+            make.bottom.equalToSuperview().offset(-100)
+            make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().offset(-16)
+            make.height.equalTo(54)
+        }
+    }
+    
+    @objc
+    private func confirmOrder() {
+        
     }
 }
 
