@@ -20,6 +20,7 @@
 		7A1B52F82AD7CB6F00C7A854 /* Onb1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52F72AD7CB6F00C7A854 /* Onb1ViewController.swift */; };
 		7A1B52FA2AD7CB7700C7A854 /* Onb2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52F92AD7CB7700C7A854 /* Onb2ViewController.swift */; };
 		7A1B52FC2AD7CB7D00C7A854 /* Onb3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52FB2AD7CB7D00C7A854 /* Onb3ViewController.swift */; };
+		7A43114D2AE8336D0051FA1D /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A43114C2AE8336D0051FA1D /* CartTableViewCell.swift */; };
 		7ABEE0D22ADB2C1E00014F1C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEE0D12ADB2C1E00014F1C /* Colors.swift */; };
 		7ABEE0D52ADB2C7F00014F1C /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEE0D42ADB2C7F00014F1C /* Shoe.swift */; };
 		7ABEE0D82ADB2CBC00014F1C /* ShoeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEE0D72ADB2CBC00014F1C /* ShoeService.swift */; };
@@ -49,6 +50,7 @@
 		7A1B52F72AD7CB6F00C7A854 /* Onb1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onb1ViewController.swift; sourceTree = "<group>"; };
 		7A1B52F92AD7CB7700C7A854 /* Onb2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onb2ViewController.swift; sourceTree = "<group>"; };
 		7A1B52FB2AD7CB7D00C7A854 /* Onb3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onb3ViewController.swift; sourceTree = "<group>"; };
+		7A43114C2AE8336D0051FA1D /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		7ABEE0D12ADB2C1E00014F1C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7ABEE0D42ADB2C7F00014F1C /* Shoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
 		7ABEE0D72ADB2CBC00014F1C /* ShoeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeService.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				7ABEE0DE2ADB33BE00014F1C /* ShoeCollectionViewCell.swift */,
+				7A43114C2AE8336D0051FA1D /* CartTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				7AFD73EF2AD9592C00765BD9 /* AuthorizationViewController.swift in Sources */,
 				7A1B52F12AD7CAA100C7A854 /* CartViewController.swift in Sources */,
 				7ABEE0D52ADB2C7F00014F1C /* Shoe.swift in Sources */,
+				7A43114D2AE8336D0051FA1D /* CartTableViewCell.swift in Sources */,
 				7AFD73EA2AD954B400765BD9 /* WelcomeViewController.swift in Sources */,
 				7A1B52EF2AD7CA9B00C7A854 /* CatalogViewController.swift in Sources */,
 				7AFD73ED2AD9592200765BD9 /* RegistrationViewController.swift in Sources */,

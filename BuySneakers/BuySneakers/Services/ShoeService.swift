@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol ShoeServiceDelegate: AnyObject {
+    func didUpdateShoes()
+}
+
 class ShoeService {
     
     static let shared = ShoeService()
+    
+    public var delegate: ShoeServiceDelegate?
     
     public var cart : [Shoe] = []
     
@@ -35,6 +41,9 @@ class ShoeService {
             shoe.quantity = 1
             cart.append(shoe)
         }
+        DispatchQueue.main.async {
+            self.delegate?.didUpdateShoes()
+        }
         
     }
     
@@ -45,7 +54,9 @@ class ShoeService {
             } else {
                 cart.remove(at: shoeIndex)
             }
-            
+        }
+        DispatchQueue.main.async {
+            self.delegate?.didUpdateShoes()
         }
     }
 }

@@ -22,7 +22,6 @@ class CatalogViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Hello, Sneakerhead!"
-        view.backgroundColor = .systemBackground
         view.addSubview(collectionView)
         view.backgroundColor = Colors.grayMainBackground
         collectionView.backgroundColor = Colors.grayMainBackground
