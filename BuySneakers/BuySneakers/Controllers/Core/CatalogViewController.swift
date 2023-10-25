@@ -9,7 +9,7 @@ import UIKit
 
 class CatalogViewController: UIViewController {
     
-    private var shoes : [Shoe] = ShoeService.shared.getAllShoes()
+    public var shoes : [Shoe] = ShoeService.shared.getAllShoes()
     
     private let collectionView : UICollectionView = {
         let layout = UICollectionViewFlowLayout()

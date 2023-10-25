@@ -7,9 +7,9 @@
 
 import UIKit
 
+
 class ShoeCollectionViewCell: UICollectionViewCell {
     static let identifier = "ShoeCollectionViewCell"
-    
     public var shoe : Shoe? {
         didSet {
             guard let shoe = shoe else {return}
@@ -80,6 +80,7 @@ class ShoeCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         [shoeImageView, addOrRemoveButton, brandLabel, descriptionLabel, priceLabel].forEach { self.addSubview($0) }
         self.backgroundColor = .white
         self.layer.cornerRadius = 4
@@ -133,5 +134,4 @@ class ShoeCollectionViewCell: UICollectionViewCell {
             make.height.equalTo(40)
         }
     }
-    
 }

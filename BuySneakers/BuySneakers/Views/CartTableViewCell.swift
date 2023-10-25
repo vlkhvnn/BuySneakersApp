@@ -24,7 +24,9 @@ class CartTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = .white.withAlphaComponent(0.98)
-        [shoeImageView, brandLabel, descriptionLabel, priceLabel, quantityButton, separatorView].forEach { self.addSubview($0) }
+        cartCellButtonView.delegate = self
+        cartCellButtonView.isUserInteractionEnabled = true
+        [shoeImageView, brandLabel, descriptionLabel, priceLabel, cartCellButtonView, separatorView].forEach { self.addSubview($0) }
         applyConstraints()
     }
     
@@ -58,16 +60,7 @@ class CartTableViewCell: UITableViewCell {
         return label
     }()
 
-    private let quantityButton : UIButton = {
-        let button = UIButton()
-        button.setTitle("+-", for: .normal)
-        button.backgroundColor = .black
-        button.layer.cornerRadius = 12
-        button.titleLabel?.textColor = .white
-        button.titleLabel?.font = .systemFont(ofSize: 16, weight: .regular)
-        button.titleLabel?.textAlignment = .center
-        return button
-    }()
+    private let cartCellButtonView = CartCellButtonView()
     
     private let separatorView: UIView = {
         let separatorView = UIView()
@@ -98,8 +91,8 @@ class CartTableViewCell: UITableViewCell {
             make.left.equalTo(shoeImageView.snp.right).offset(16)
         }
         
-        quantityButton.snp.makeConstraints { make in
-            make.top.equalTo(priceLabel.snp.bottom).offset(10)
+        cartCellButtonView.snp.makeConstraints { make in
+            make.top.equalTo(priceLabel.snp.bottom).offset(20)
             make.left.equalTo(shoeImageView.snp.right).offset(16)
             make.width.equalTo(160)
             make.height.equalTo(36)
@@ -112,5 +105,22 @@ class CartTableViewCell: UITableViewCell {
             make.height.equalTo(16)
         }
     }
+}
 
+extension CartTableViewCell : CartCellButtonViewDelegate {
+    func didPlusButtonTapped() {
+        guard let shoe = shoe else {return}
+        shoe.quantity! += 1
+        self.shoe = shoe
+        cartCellButtonView.cellQuantity! += 1
+    }
+    
+    func didMinusButtonTapped() {
+        guard let shoe = shoe else {return}
+        if shoe.quantity! > 0 {
+            shoe.quantity! -= 1
+            cartCellButtonView.cellQuantity! -= 1
+        }
+        self.shoe = shoe
+    }
 }
