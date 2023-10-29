@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		7A00C1C22AD7CE9B001F33BB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7A00C1C12AD7CE9B001F33BB /* SnapKit */; };
 		7A00C1C42AD7CE9B001F33BB /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 7A00C1C32AD7CE9B001F33BB /* SnapKit-Dynamic */; };
+		7A148CD22AED0C5D00C31BD4 /* AccountInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A148CD12AED0C5D00C31BD4 /* AccountInformationViewController.swift */; };
+		7A148CD42AED0E8500C31BD4 /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A148CD32AED0E8500C31BD4 /* OrderHistoryViewController.swift */; };
+		7A148CD72AED0E9800C31BD4 /* ShoeSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A148CD62AED0E9800C31BD4 /* ShoeSizeViewController.swift */; };
+		7A148CDA2AED7AA400C31BD4 /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A148CD92AED7AA400C31BD4 /* PurchaseService.swift */; };
+		7A148CDC2AED7D7200C31BD4 /* PurchaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A148CDB2AED7D7200C31BD4 /* PurchaseTableViewCell.swift */; };
 		7A1B52D82AD7CA4000C7A854 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52D72AD7CA4000C7A854 /* AppDelegate.swift */; };
 		7A1B52DA2AD7CA4000C7A854 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52D92AD7CA4000C7A854 /* SceneDelegate.swift */; };
 		7A1B52E12AD7CA4200C7A854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1B52E02AD7CA4200C7A854 /* Assets.xcassets */; };
@@ -20,9 +25,12 @@
 		7A1B52F82AD7CB6F00C7A854 /* Onb1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52F72AD7CB6F00C7A854 /* Onb1ViewController.swift */; };
 		7A1B52FA2AD7CB7700C7A854 /* Onb2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52F92AD7CB7700C7A854 /* Onb2ViewController.swift */; };
 		7A1B52FC2AD7CB7D00C7A854 /* Onb3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B52FB2AD7CB7D00C7A854 /* Onb3ViewController.swift */; };
+		7A20E51B2AEBD09A00DB332A /* ProfileSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A20E51A2AEBD09A00DB332A /* ProfileSectionView.swift */; };
 		7A43114D2AE8336D0051FA1D /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A43114C2AE8336D0051FA1D /* CartTableViewCell.swift */; };
 		7A43114F2AE8E9FC0051FA1D /* CartTotalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A43114E2AE8E9FC0051FA1D /* CartTotalView.swift */; };
 		7A4311512AE8FAB00051FA1D /* CartCellButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4311502AE8FAB00051FA1D /* CartCellButtonView.swift */; };
+		7A76EB792AEE3DFA0037E5F3 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A76EB782AEE3DFA0037E5F3 /* OrderViewController.swift */; };
+		7A76EB7B2AEE3EED0037E5F3 /* OrderAndDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A76EB7A2AEE3EED0037E5F3 /* OrderAndDateView.swift */; };
 		7A95158F2AE932B700ABBE9C /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95158E2AE932B700ABBE9C /* Purchase.swift */; };
 		7A9515912AE938DB00ABBE9C /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9515902AE938DB00ABBE9C /* BottomSheetViewController.swift */; };
 		7ABEE0D22ADB2C1E00014F1C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABEE0D12ADB2C1E00014F1C /* Colors.swift */; };
@@ -41,6 +49,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A148CD12AED0C5D00C31BD4 /* AccountInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInformationViewController.swift; sourceTree = "<group>"; };
+		7A148CD32AED0E8500C31BD4 /* OrderHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewController.swift; sourceTree = "<group>"; };
+		7A148CD62AED0E9800C31BD4 /* ShoeSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeSizeViewController.swift; sourceTree = "<group>"; };
+		7A148CD92AED7AA400C31BD4 /* PurchaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
+		7A148CDB2AED7D7200C31BD4 /* PurchaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTableViewCell.swift; sourceTree = "<group>"; };
 		7A1B52D42AD7CA4000C7A854 /* BuySneakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuySneakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1B52D72AD7CA4000C7A854 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A1B52D92AD7CA4000C7A854 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,9 +67,12 @@
 		7A1B52F72AD7CB6F00C7A854 /* Onb1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onb1ViewController.swift; sourceTree = "<group>"; };
 		7A1B52F92AD7CB7700C7A854 /* Onb2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onb2ViewController.swift; sourceTree = "<group>"; };
 		7A1B52FB2AD7CB7D00C7A854 /* Onb3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onb3ViewController.swift; sourceTree = "<group>"; };
+		7A20E51A2AEBD09A00DB332A /* ProfileSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionView.swift; sourceTree = "<group>"; };
 		7A43114C2AE8336D0051FA1D /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		7A43114E2AE8E9FC0051FA1D /* CartTotalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTotalView.swift; sourceTree = "<group>"; };
 		7A4311502AE8FAB00051FA1D /* CartCellButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCellButtonView.swift; sourceTree = "<group>"; };
+		7A76EB782AEE3DFA0037E5F3 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		7A76EB7A2AEE3EED0037E5F3 /* OrderAndDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAndDateView.swift; sourceTree = "<group>"; };
 		7A95158E2AE932B700ABBE9C /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
 		7A9515902AE938DB00ABBE9C /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		7ABEE0D12ADB2C1E00014F1C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -87,6 +103,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A148CD82AED10A900C31BD4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7A148CD32AED0E8500C31BD4 /* OrderHistoryViewController.swift */,
+				7A148CD62AED0E9800C31BD4 /* ShoeSizeViewController.swift */,
+				7A148CD12AED0C5D00C31BD4 /* AccountInformationViewController.swift */,
+				7A76EB782AEE3DFA0037E5F3 /* OrderViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		7A148CDD2AED8A6700C31BD4 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				7A43114C2AE8336D0051FA1D /* CartTableViewCell.swift */,
+				7A43114E2AE8E9FC0051FA1D /* CartTotalView.swift */,
+				7A4311502AE8FAB00051FA1D /* CartCellButtonView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
 		7A1B52CB2AD7CA4000C7A854 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +183,7 @@
 		7A1B52ED2AD7CA8B00C7A854 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				7A148CD82AED10A900C31BD4 /* Profile */,
 				7AFD73E92AD954B300765BD9 /* WelcomeViewController.swift */,
 				7A9515902AE938DB00ABBE9C /* BottomSheetViewController.swift */,
 			);
@@ -183,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				7ABEE0D72ADB2CBC00014F1C /* ShoeService.swift */,
+				7A148CD92AED7AA400C31BD4 /* PurchaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -190,10 +229,11 @@
 		7ABEE0D92ADB306A00014F1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7A148CDD2AED8A6700C31BD4 /* Cart */,
 				7ABEE0DE2ADB33BE00014F1C /* ShoeCollectionViewCell.swift */,
-				7A43114C2AE8336D0051FA1D /* CartTableViewCell.swift */,
-				7A43114E2AE8E9FC0051FA1D /* CartTotalView.swift */,
-				7A4311502AE8FAB00051FA1D /* CartCellButtonView.swift */,
+				7A20E51A2AEBD09A00DB332A /* ProfileSectionView.swift */,
+				7A76EB7A2AEE3EED0037E5F3 /* OrderAndDateView.swift */,
+				7A148CDB2AED7D7200C31BD4 /* PurchaseTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,24 +331,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A148CD42AED0E8500C31BD4 /* OrderHistoryViewController.swift in Sources */,
+				7A76EB7B2AEE3EED0037E5F3 /* OrderAndDateView.swift in Sources */,
 				7AFD73EF2AD9592C00765BD9 /* AuthorizationViewController.swift in Sources */,
 				7A9515912AE938DB00ABBE9C /* BottomSheetViewController.swift in Sources */,
+				7A76EB792AEE3DFA0037E5F3 /* OrderViewController.swift in Sources */,
 				7A43114F2AE8E9FC0051FA1D /* CartTotalView.swift in Sources */,
 				7A1B52F12AD7CAA100C7A854 /* CartViewController.swift in Sources */,
 				7ABEE0D52ADB2C7F00014F1C /* Shoe.swift in Sources */,
 				7A43114D2AE8336D0051FA1D /* CartTableViewCell.swift in Sources */,
+				7A148CDC2AED7D7200C31BD4 /* PurchaseTableViewCell.swift in Sources */,
+				7A148CD22AED0C5D00C31BD4 /* AccountInformationViewController.swift in Sources */,
 				7A4311512AE8FAB00051FA1D /* CartCellButtonView.swift in Sources */,
 				7AFD73EA2AD954B400765BD9 /* WelcomeViewController.swift in Sources */,
 				7A1B52EF2AD7CA9B00C7A854 /* CatalogViewController.swift in Sources */,
 				7AFD73ED2AD9592200765BD9 /* RegistrationViewController.swift in Sources */,
 				7A1B52F52AD7CABD00C7A854 /* MainTabBarController.swift in Sources */,
 				7A1B52FA2AD7CB7700C7A854 /* Onb2ViewController.swift in Sources */,
+				7A148CD72AED0E9800C31BD4 /* ShoeSizeViewController.swift in Sources */,
 				7A1B52F32AD7CAA700C7A854 /* ProfileViewController.swift in Sources */,
 				7ABEE0D22ADB2C1E00014F1C /* Colors.swift in Sources */,
+				7A20E51B2AEBD09A00DB332A /* ProfileSectionView.swift in Sources */,
 				7A1B52FC2AD7CB7D00C7A854 /* Onb3ViewController.swift in Sources */,
 				7A1B52D82AD7CA4000C7A854 /* AppDelegate.swift in Sources */,
 				7ABEE0D82ADB2CBC00014F1C /* ShoeService.swift in Sources */,
 				7A95158F2AE932B700ABBE9C /* Purchase.swift in Sources */,
+				7A148CDA2AED7AA400C31BD4 /* PurchaseService.swift in Sources */,
 				7ABEE0DF2ADB33BE00014F1C /* ShoeCollectionViewCell.swift in Sources */,
 				7A1B52F82AD7CB6F00C7A854 /* Onb1ViewController.swift in Sources */,
 				7A1B52DA2AD7CA4000C7A854 /* SceneDelegate.swift in Sources */,

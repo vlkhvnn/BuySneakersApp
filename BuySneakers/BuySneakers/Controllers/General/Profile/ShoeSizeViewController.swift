@@ -8,6 +8,14 @@
 import UIKit
 
 class ShoeSizeViewController: UIViewController {
+    
+    public let shoeSizeTextField : UITextField = {
+        let textfield = UITextField()
+        textfield.placeholder = ""
+        textfield.borderStyle = .roundedRect
+        textfield.backgroundColor = Colors.grayMainBackground
+        return textfield
+    }()
 
     private let saveChangesButton : UIButton = {
         let button = UIButton()
@@ -19,13 +27,11 @@ class ShoeSizeViewController: UIViewController {
         return button
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.grayMainBackground
-        [saveChangesButton].forEach { self.view.addSubview($0) }
+        view.backgroundColor = .white
+        [saveChangesButton, shoeSizeTextField].forEach { self.view.addSubview($0) }
         navigationItem.title = "Shoe Size"
-        navigationItem.backButtonTitle = ""
         applyConstraints()
     }
     
@@ -35,6 +41,13 @@ class ShoeSizeViewController: UIViewController {
             make.right.equalToSuperview().offset(-16)
             make.height.equalTo(54)
             make.bottom.equalToSuperview().offset(-120)
+        }
+        
+        shoeSizeTextField.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(16)
+            make.right.equalToSuperview().offset(-16)
+            make.height.equalTo(48)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(16)
         }
     }
     

@@ -61,11 +61,7 @@ class CartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(tableView)
-        view.addSubview(confirmButton)
-        view.addSubview(cartTotalView)
-        view.addSubview(emptyCartLabel)
-        view.addSubview(findLabel)
+        [tableView, confirmButton, cartTotalView, emptyCartLabel, findLabel].forEach { self.view.addSubview($0) }
         tableView.delegate = self
         tableView.dataSource = self
         ShoeService.shared.delegate = self
@@ -136,6 +132,7 @@ class CartViewController: UIViewController {
     }
     
     private func confirmedOrder() {
+        PurchaseService.shared.didPurchase(Purchase(shoes: cartItems, date: Date()))
         for shoe in self.cartItems {
             ShoeService.shared.removeFromCart(shoe)
         }
@@ -183,9 +180,7 @@ extension CartViewController : UITableViewDelegate, UITableViewDataSource {
     private func handleDeleteShoe(_ shoe : Shoe?) {
         ShoeService.shared.removeFromCart(shoe!)
         didUpdateShoes()
-        
     }
- 
 }
 
 extension CartViewController : ShoeServiceDelegate {

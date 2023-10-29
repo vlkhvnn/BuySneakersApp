@@ -81,6 +81,7 @@ class WelcomeViewController: UIViewController {
             view.addSubview($0)
         }
         applyConstraints()
+        navigationItem.backButtonTitle = ""
     }
     
     private func applyConstraints() {

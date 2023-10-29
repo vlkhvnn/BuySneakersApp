@@ -9,9 +9,9 @@ import Foundation
 
 class Purchase {
     private var id : String
-    private var shoes : [Shoe]
-    private var date : Date
-    init(id: String, shoes: [Shoe], date: Date) {
+    public var shoes : [Shoe]
+    public var date : Date
+    init(shoes: [Shoe], date: Date) {
         self.id = UUID().uuidString
         self.shoes = shoes
         self.date = date
